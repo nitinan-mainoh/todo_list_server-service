@@ -1,0 +1,16 @@
+# ไม่ติดตาม node_modules
+node_modules/
+
+# ไม่ติดตามไฟล์ Environment Variables
+.env
+
+# ไม่ติดตามไฟล์ที่เกี่ยวข้องกับระบบปฏิบัติการ
+.DS_Store
+Thumbs.db
+
+# ไม่ติดตามไฟล์ล็อกของ npm
+npm-debug.log*
+
+# ไม่ติดตามโฟลเดอร์ build หรือ dist
+build/
+dist/
