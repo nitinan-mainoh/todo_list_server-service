@@ -60,6 +60,9 @@ const deleteTask = async (req, res) => {
     const result = await Task.destroy({
       where: { task_id: req.params.task_id },
     });
+    res
+      .status(200)
+      .json({ message: "Task" + result + " deleted successfully" });
   } catch (error) {
     res.stutus(500).json({ message: "Failed to delete task" + error.message });
   }
